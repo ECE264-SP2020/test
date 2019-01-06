@@ -1,0 +1,11 @@
+language: csharp
+dist: trusty
+mono: none
+dotnet: 2.1.201
+solution: ThreeNumSum
+
+install:
+- dotnet restore ThreeNumSum
+script:
+- dotnet build ThreeNumSum
+- dotnet test ThreeNumSum/ThreeNumSumTests
