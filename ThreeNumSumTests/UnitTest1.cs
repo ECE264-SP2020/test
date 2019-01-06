@@ -52,7 +52,7 @@ namespace ThreeNumSumTests
 
 
             ThreeNumSum.Program.Main(null);
-            Assert.Equal("16\r\n", content.ToString());
+            Assert.Equal("16", content.ToString().TrimEnd());
             _fixture.score += 50;
             output.WriteLine("Score: {0}", _fixture.score);
         }
@@ -68,7 +68,7 @@ namespace ThreeNumSumTests
             var reader = new StringReader("bob\n4\n7\n");
             Console.SetIn(reader);
             ThreeNumSum.Program.Main(null);
-            Assert.Equal("Bad Input\r\n", content.ToString());
+            Assert.Equal("Bad Input", content.ToString().TrimEnd());
             _fixture.score += 50;
             output.WriteLine("Score: {0}", _fixture.score);
         }
