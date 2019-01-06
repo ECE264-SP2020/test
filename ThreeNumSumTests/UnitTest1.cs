@@ -21,8 +21,8 @@ namespace ThreeNumSumTests
 
         public void Dispose()
         {
-            output.WriteLine("Score: {0}", score);
-            //Debug.WriteLine("Dispose Fixture called");
+            //output.WriteLine("Score: {0}", score);
+            Debug.WriteLine("Dispose Fixture called");
         }
     }
 
@@ -49,6 +49,8 @@ namespace ThreeNumSumTests
 
             var reader = new StringReader("5\n4\n7\n");
             Console.SetIn(reader);
+
+
             ThreeNumSum.Program.Main(null);
             Assert.Equal("16\r\n", content.ToString());
             _fixture.score += 50;
