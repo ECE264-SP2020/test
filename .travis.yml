@@ -8,4 +8,4 @@ install:
 - dotnet restore ThreeNumSum
 script:
 - dotnet build ThreeNumSum
-- dotnet test ThreeNumSum/ThreeNumSumTests
+- dotnet test ThreeNumSumTests
