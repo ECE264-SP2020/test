@@ -26,16 +26,13 @@ namespace ThreeNumSumTests
         }
     }
 
-    public class UnitTest1: IClassFixture<MyFixture>
+    public class UnitTest1
     {
-        private MyFixture _fixture;
-
+        
         private readonly ITestOutputHelper output;
-        public UnitTest1(MyFixture fixture ,ITestOutputHelper output)
+        public UnitTest1(ITestOutputHelper output)
         {
-            _fixture = fixture;
             this.output = output;
-            _fixture.output = output;
             //score = 0;
         }
         
@@ -53,8 +50,8 @@ namespace ThreeNumSumTests
 
             ThreeNumSum.Program.Main(null);
             Assert.Equal("16", content.ToString().TrimEnd());
-            _fixture.score += 50;
-            output.WriteLine("Score: {0}", _fixture.score);
+           
+            output.WriteLine("Score: +25");
         }
 
         [Fact]
@@ -69,13 +66,13 @@ namespace ThreeNumSumTests
             Console.SetIn(reader);
             ThreeNumSum.Program.Main(null);
             Assert.Equal("Bad Input", content.ToString().TrimEnd());
-            _fixture.score += 50;
-            output.WriteLine("Score: {0}", _fixture.score);
+
+            output.WriteLine("Score: +50");
         }
         [Fact]
         public void Test3()
         {
-            output.WriteLine("Score: {0}", _fixture.score);
+            output.WriteLine("Score: +25");
         }
     }
 }
