@@ -8,23 +8,23 @@ using Xunit.Abstractions;
 
 namespace ThreeNumSumTests
 {
-    public class MyFixture :IDisposable
-    {
-        public int score;
-        //private readonly ITestOutputHelper output;
-        public ITestOutputHelper output;
-        public MyFixture()
-        {
-            score = new int();
-            //this.output = output;
-        }
+    //public class MyFixture :IDisposable
+    //{
+    //    public int score;
+    //    //private readonly ITestOutputHelper output;
+    //    public ITestOutputHelper output;
+    //    public MyFixture()
+    //    {
+    //        score = new int();
+    //        //this.output = output;
+    //    }
 
-        public void Dispose()
-        {
-            //output.WriteLine("Score: {0}", score);
-            Debug.WriteLine("Dispose Fixture called");
-        }
-    }
+    //    public void Dispose()
+    //    {
+    //        //output.WriteLine("Score: {0}", score);
+    //        Debug.WriteLine("Dispose Fixture called");
+    //    }
+    //}
 
     public class UnitTest1
     {
