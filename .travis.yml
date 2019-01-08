@@ -8,4 +8,6 @@ install:
 - dotnet restore ThreeNumSum
 script:
 - dotnet build ThreeNumSum
-- dotnet test ThreeNumSumTests
+- dotnet test ---logger "trx;LogFileName=temp.trx" ThreeNumSumTests
+- ls
+- cat TestResults/temp.trx

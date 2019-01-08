@@ -16,7 +16,7 @@ namespace ThreeNumSum
             }
             else
             {
-                Console.WriteLine("Bad input");
+                Console.WriteLine("Bad Input");
             }
         }
         static int getNum()
