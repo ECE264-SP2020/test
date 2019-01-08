@@ -10,4 +10,4 @@ script:
 - dotnet build ThreeNumSum
 - dotnet test --logger "trx;LogFileName=temp.trx" ThreeNumSumTests
 - ls ThreeNumSumTests
-- cat TestResults/temp.trx
+- cat ThreeNumSumTests/TestResults/temp.trx
